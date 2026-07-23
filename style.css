@@ -1,0 +1,187 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#111;
+position:fixed;
+width:100%;
+padding:15px 10%;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#00bcd4;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:150px 10%;
+min-height:100vh;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:55px;
+color:#00bcd4;
+}
+
+.hero-text h2{
+margin:15px 0;
+height:35px;
+}
+
+.hero-text p{
+margin:20px 0;
+line-height:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 30px;
+background:#00bcd4;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0097a7;
+}
+
+.hero-image img{
+width:320px;
+border-radius:50%;
+box-shadow:0 0 25px #00bcd4;
+}
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+text-align:center;
+margin-bottom:40px;
+font-size:35px;
+color:#00bcd4;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:32px;
+}
+
+.skill-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:40px;
+text-align:center;
+border-radius:10px;
+transition:.4s;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:50px;
+color:#00bcd4;
+margin-bottom:15px;
+}
+
+.edu{
+text-align:center;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.contact-box{
+text-align:center;
+font-size:20px;
+line-height:50px;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero-image img{
+width:220px;
+margin-bottom:40px;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+}
+
+}
